@@ -1,0 +1,40 @@
+@mixin breakpoint($point) {
+  // ブラウザサイズ959pxより小さい時
+  @if $point == tablet {
+    @media (max-width: 959px) {
+      @content;
+    }
+  }
+  // ブラウザサイズ599pxより小さい時
+  @if $point == sp {
+    @media (max-width: 599px) {
+      @content;
+    }
+  }
+}
+
+:root {
+  --text: #333;
+  --orange: #F87423;
+  --blue: #0C3073;
+  --yellow: #FEC12F;
+  --dark-orange: #F84519;
+  --gray: #D9D9D9;
+  --skin: #FFF2E3;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  box-sizing: border-box;
+  color: var(--text);
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  overflow-x: hidden;
+}
+
+.link-hover {
+  transition: opacity 0.3s;
+  &:hover {
+    opacity: 0.5;
+  }
+}
