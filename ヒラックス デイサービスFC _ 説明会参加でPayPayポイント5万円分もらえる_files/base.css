@@ -2820,7 +2820,7 @@ body {
 }
 @media (max-width: 959px) {
   .c-heading__main {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .c-heading__main span {
@@ -2829,7 +2829,7 @@ body {
 }
 @media (max-width: 959px) {
   .c-heading__main span {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .c-heading__main .number {
@@ -3318,7 +3318,7 @@ body {
 }
 @media (max-width: 959px) {
   .p-top__video {
-    padding: 80px 0;
+    padding: 80px 20px;
   }
 }
 .p-top__video-inner {
@@ -3363,6 +3363,7 @@ body {
 }
 .p-top__video-text > * + * {
   margin-top: 16px;
+  font-size: 20px;
 }
 @media (max-width: 959px) {
   .p-top__video-text {
@@ -3388,7 +3389,7 @@ body {
   color: var(--orange);
   border: 1px solid var(--orange);
   border-radius: 30px;
-  font-weight: 800;
+  font-weight: 700;
 }
 @media (max-width: 1180px) {
   .p-top__video-link {
@@ -3403,7 +3404,7 @@ body {
 }
 @media (max-width: 959px) {
   .p-top__video-desc {
-    font-size: 16px;
+    font-size: 25px;
     text-align: left;
   }
 }
@@ -3414,7 +3415,7 @@ body {
 }
 @media (max-width: 959px) {
   .p-top__video-desc span {
-    font-size: 18px;
+    font-size: 25px;
   }
 }
 
@@ -3462,6 +3463,8 @@ body {
 @media (max-width: 959px) {
   .p-top__about-desc {
     margin-top: 40px;
+	font-size: 22px;
+	letter-spacing: 2px;
   }
 }
 .p-top__about-img-wrap {
@@ -3519,7 +3522,6 @@ body {
 }
 @media (max-width: 959px) {
   .reason-card {
-    max-width: 300px;
   }
 }
 
@@ -3567,7 +3569,7 @@ body {
 }
 
 .reason-description {
-  font-size: 14px;
+  font-size: 20px;
   color: #303031;
 }
 
@@ -3622,6 +3624,7 @@ body {
 }
 .p-top__about-content-desc {
   margin-top: 40px;
+  font-size: 20px;
 }
 .p-top__about-arrow {
   position: absolute;
@@ -3778,20 +3781,44 @@ body {
     gap: 8px;
   }
 }
+
+.p-top__message-desc {
+	max-width: 800px;
+	margin-inline: auto;
+	margin-top: 80px;
+  }
+  @media (max-width: 959px) {
+	.p-top__message-desc {
+	  margin-top: 40px;
+	  font-size: 22px;
+	  letter-spacing: 2px;
+	}
+  }
+  
+
+
 .p-top__message-name {
   margin-top: 24px;
   text-align: right;
+  font-size: 30px;
+  font-family: serif;
+  font-weight: 600;
 }
 @media (max-width: 959px) {
   .p-top__message-name {
     margin-top: 8px;
+	font-size: 22px;
   }
 }
 .p-top__message-name span {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 35px;
   margin-left: 16px;
 }
+@media (max-width: 959px) {
+	.p-top__message-name span {
+	  font-size: 28px;
+	}
+  }
 .p-top__message-img {
   border-radius: 10px;
   overflow: hidden;
@@ -3802,7 +3829,7 @@ body {
   }
   @media (max-width: 959px) {
 	.p-top__faq {
-	  padding-top: 80px;
+	  padding: 80 20px;
 	}
   }
   .p-top__faq-content {
@@ -3832,50 +3859,89 @@ body {
   }
   .p-top__faq-summary {
 	display: grid;
-	grid-template-columns: 32px 1fr 8px;
-	gap: 7px;
+	grid-template-columns: 64px 1fr 8px; /* アイコン幅を32pxから64pxに変更 */
+	gap: 12px; /* 間隔も少し広げる */
 	font-weight: 500;
+	align-items: center; /* 縦方向の配置を中央に */
   }
+  
   .p-top__faq-summary-icon {
 	background: rgba(12, 48, 115, 0.7);
-	height: 32px;
-	border-radius: 10px;
+	height: 64px; /* 高さを32pxから64pxに変更 */
+	width: 64px; /* 幅も明示的に指定 */
+	border-radius: 16px; /* 角丸も大きく */
 	color: #fff;
-	font-size: 18px;
+	font-size: 32px; /* フォントサイズを18pxから32pxに変更 */
 	font-weight: 700;
 	text-align: center;
-	margin-top: -4px;
+	line-height: 64px; /* 縦方向の中央揃え */
+	margin-top: 0; /* margin-topは不要になるため削除 */
+	display: flex; /* フレックスボックスで中央揃え */
+	justify-content: center;
+	align-items: center;
   }
+  
   @media (max-width: 959px) {
 	.p-top__faq-summary-icon {
-	  margin-top: -2px;
+	  height: 56px; /* スマホ表示時は少し小さく */
+	  width: 56px;
+	  font-size: 28px;
+	  line-height: 56px;
+	}
+	
+	.p-top__faq-summary {
+	  grid-template-columns: 56px 1fr 8px; /* スマホ表示時のグリッド調整 */
+	  gap: 10px;
 	}
   }
+  
   .p-top__faq-arrow {
-	width: 8px;
-	height: 8px;
-	border-top: 1px solid rgba(12, 48, 115, 0.7);
-	border-left: 1px solid rgba(12, 48, 115, 0.7);
+	width: 10px; /* 少し大きく */
+	height: 10px;
+	border-top: 2px solid rgba(12, 48, 115, 0.7); /* 線も太く */
+	border-left: 2px solid rgba(12, 48, 115, 0.7);
 	rotate: 45deg;
 	align-self: center;
 	transition: rotate 0.3s;
   }
+  
   .p-top__faq-answer {
-	margin-top: 16px;
+	margin-top: 24px; /* 余白を増やす */
 	display: grid;
-	grid-template-columns: 32px 1fr;
-	gap: 7px;
+	grid-template-columns: 64px 1fr; /* アイコン幅を32pxから64pxに変更 */
+	gap: 12px; /* 間隔も少し広げる */
+	align-items: start; /* 上揃え */
   }
+  
   .p-top__faq-answer-icon {
 	background: rgba(248, 69, 25, 0.7);
-	height: 32px;
-	border-radius: 10px;
+	height: 64px; /* 高さを32pxから64pxに変更 */
+	width: 64px; /* 幅も明示的に指定 */
+	border-radius: 16px; /* 角丸も大きく */
 	color: #fff;
-	font-size: 18px;
+	font-size: 32px; /* フォントサイズを18pxから32pxに変更 */
 	font-weight: 700;
 	text-align: center;
+	line-height: 64px; /* 縦方向の中央揃え */
+	display: flex; /* フレックスボックスで中央揃え */
+	justify-content: center;
+	align-items: center;
   }
-
+  
+  @media (max-width: 959px) {
+	.p-top__faq-answer-icon {
+	  height: 56px; /* スマホ表示時は少し小さく */
+	  width: 56px;
+	  font-size: 28px;
+	  line-height: 56px;
+	}
+	
+	.p-top__faq-answer {
+	  grid-template-columns: 56px 1fr; /* スマホ表示時のグリッド調整 */
+	  gap: 10px;
+	}
+  }
+  
 .p-top__cta-bottom {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -3923,7 +3989,7 @@ body {
 
 /* セクション全体 */
 .p-top__reason {
-  padding: 120px 0;
+  padding: 120px 20px;
 }
 
 
@@ -3948,16 +4014,36 @@ body {
 @media (max-width: 599px) {
   .p-top__reason-card {
     display: block; /* Flexを解除して縦並びに */
-    padding: 20px; /* パディングを調整 */
-    text-align: center; /* テキスト中央揃え */
+	padding-inline: 20px;
+    text-align: center; /* テキスト左揃え */
   }
 
   .p-top__reason-img img {
     margin-bottom: 20px; /* 縦並び時に画像下に余白 */
     max-width: 100%; /* 幅を親要素に合わせる */
     height: auto; /* 高さを自動調整 */
+	text-align: center;
+  }
+  .p-top__reason-img {
+	text-align: center;
   }
 }
+/* 左右コンテンツ */
+.p-top__reason-img img {
+	width: auto;
+	height: auto;
+	max-width: 300px;
+	overflow: hidden;
+	margin-bottom: 20px; /* 縦並び時に余白追加 */
+  }
+
+
+/* レスポンシブ対応 */
+@media (max-width: 1180px) {
+	.p-top__reason-card {
+	  gap: 20px;
+	}
+  }
 
 
 
@@ -3965,12 +4051,7 @@ body {
   flex-direction: row-reverse; /* テキストと画像を逆配置 */
 }
 
-/* 左右コンテンツ */
-.p-top__reason-img img {
-  width: auto;
-  max-width: 300px;
-  overflow: hidden;
-}
+
 
 
 
@@ -3982,9 +4063,13 @@ body {
 @media (max-width: 959px) {
   .p-top__reason-main {
     color: var(--orange);
-    font-size: 20px;
   }
 }
+@media (max-width: 599px) {
+	.p-top__reason-main {
+		display: inline-block;
+	}
+  }
 
 
 
@@ -4000,13 +4085,26 @@ body {
   font-size: 44px;
   line-height: 88px;
 }
+  /* 番号のサイズを大きく修正 */
 @media (max-width: 599px) {
   .p-top__reason-number {
-    width: 44px;
-    height: 44px;
-    font-size: 22px;
-    line-height: 44px;
-    }
+    width: 64px; /* デザインカンプに合わせて大きく */
+    height: 64px;
+    font-size: 32px; /* フォントサイズを大きく */
+    line-height: 64px;
+    margin-right: 10px; /* 番号と見出しの間隔 */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+    /* 見出し部分の調整 */
+	.p-top__reason-text h2 {
+		display: flex;
+		align-items: center;
+		margin-bottom: 15px;
+		flex-wrap: wrap; /* 必要に応じて折り返し */
+	  }
 }
 
 
@@ -4037,8 +4135,9 @@ body {
 }
 @media (max-width: 959px) {
   .p-top__reason-desc {
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 400; /* 細字に設定 */
+	line-height: 1.6;
   }
 }
 .p-top__reason-desc span {
@@ -4054,19 +4153,7 @@ body {
 
 
 
-/* レスポンシブ対応 */
-@media (max-width: 1180px) {
-  .p-top__reason-card {
-    padding-inline: 40px;
-    gap: 20px;
-  }
-}
 
-  .p-top__reason-img img {
-    width: auto;
-    height: auto;
-    margin-bottom: 20px; /* 縦並び時に余白追加 */
-  }
 
 
 /* 背景部分 */
