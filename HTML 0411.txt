@@ -688,6 +688,16 @@
 			  </section>			
 
 
+			<section id="cont3" class="cont">
+				<div>
+					<img src="./images/CTA1900w_1_1.png" alt="">
+				</div>
+				<a href="https://hirax-adc.site/refe01/#movie" target="_self" class="alpha" data-start="87"><li class="play_btn">
+						<div>
+							<img src="./images/CTA1900w_2_1.png" alt="">
+						</div>
+				</a>
+			</section>
 
 
 			<section class="p-top__cta l-container__full">
@@ -697,7 +707,9 @@
 			  
 			  
 
-
+			<div>
+				<img src="./images/flow.png" alt="">
+			</div>
 			<section class="p-top__flow l-container__full" id="flow">
 				<div class="l-container">
 				  <div class="c-heading"><span class="c-heading__sub">flow</span>
@@ -729,6 +741,37 @@
 
 			
 			<br><br><br>
+			<section class="ori-video">
+			<div>
+				<img src="./images2/video-0-1.png" alt="">
+			</div>
+			<br><br><br>
+
+			<div>
+				<img src="./images2/video-1.png" alt="">
+			</div>
+
+			<div>
+				<img src="./images2/video-2.png" alt="">
+			</div>
+
+			<div>
+				<img src="./images2/video-3.png" alt="">
+			</div>
+
+			<div>
+				<img src="./images2/video-4.png" alt="">
+			</div>
+
+			<div>
+				<img src="./images2/video-5.png" alt="">
+			</div>
+
+			<div style="padding: 25px;	">
+				<img src="./images2/Group 173.png" alt="">
+			</div>
+			<br><br><br>
+			</section>
 
 			<section class="p-top__video">
 				<div class="c-heading"><span class="c-heading__sub">video</span>
@@ -782,6 +825,9 @@
 			  </section>
 	  
 
+			<div>
+				<img src="./images/about.png" alt="">
+			</div>
 
 			<section class="p-top__about l-container__full" id="about">
 				<div class="c-heading"><span class="c-heading__sub">about</span>
@@ -812,6 +858,10 @@
 			</div>
 			</section>
 
+
+			<div>
+				<img src="./images2/about-2.png" alt="">
+			</div>
 
 
 			<section class="loop">
@@ -860,11 +910,19 @@
 				</div>
 			</section>
 
+<section class="ori-reason">
+			<div>
+				<img src="./images/reason.png" alt="">
+			</div>
+		</section>
 
 			<div style="padding: 20px;">
 				<img src="./images/text.png" alt="">
 			</div>
 
+			<div>
+				<img src="./images/reason2.png" alt="">
+			</div>
 
             <section class="reason-section">
 				<div class="c-heading"><span class="c-heading__sub">about</span>
@@ -906,6 +964,9 @@
 				<img src="./images/what.png" alt="">
 			</div>
 
+			<div>
+				<img src="./images/strength.png" alt="">
+			</div>
 
 			<section class="p-top__strength l-container__full" id="strength">
 				<div class="p-top__strength-bg">
@@ -952,6 +1013,9 @@
 				<img src="./images/point.png" alt="">
 			</div>
 
+			<div>
+				<img src="./images/message.png" alt="">
+			</div>
 
 			<section class="p-top__message l-container__full" id="message">
 				<div class="c-heading"><span class="c-heading__sub">message</span>
@@ -969,6 +1033,9 @@
 				</div>
 			  </section>
 
+			<div>
+				<img src="./images/flow-2.png" alt="">
+			</div>
 
 
 			<section class="p-top__flow l-container__full" id="flow">
@@ -1000,7 +1067,10 @@
 			  </section>
 
 			  
+			<div style="padding: 20px;">
 
+				<img src="./images/FAQ.png" alt="">
+			</div>
 
 			<section class="p-top__faq" id="faq">
 				<div class="c-heading"><span class="c-heading__sub">faq</span>
@@ -1047,6 +1117,23 @@
 	
 
 
+	<div>
+		<img src="./images/CTA-2_1_1.png" alt="">
+	</div>
+	<a href="https://hirax-adc.site/refe01/#movie" target="_self" class="alpha" data-start="87"><li class="play_btn">
+			<div>
+				<img src="./images/CTA-2_2_1.png" alt="">
+			</div>
+	</a>
+
+	<div>
+		<img src="./images/CTA-3_1_1.png" alt="">
+	</div>
+	<a href="https://hirax-adc.site/refe01/#movie" target="_self" class="alpha" data-start="87"><li class="play_btn">
+			<div>
+				<img src="./images/CTA-3_2_1.png" alt="">
+			</div>
+	</a>
 
 	<div class="p-top__cta-bottom">
         <div class="p-top__cta-bottom-body">
@@ -1059,7 +1146,75 @@
         </div>
       </div>
 
+	<section id="contact" class="cont">
 
+		<figure class="cont11"><img src="./images2/logo_w.png" alt=""></figure>
+
+
+		<div style="padding-bottom: 90px;" class="inner">
+			<dl>
+				<dt>
+					<a href="#cont3">
+						<figure class=""><img src="./images2/contact_1.png" alt=""></figure>
+					</a>
+				</dt>
+				<dt>
+					<a href="#cont4">
+						<figure class=""><img src="./images2/contact_2.png" alt=""></figure>
+					</a>
+				</dt>
+				<dt>
+					<a href="#cont5">
+						<figure class=""><img src="./images2/contact_3.png" alt=""></figure>
+					</a>
+				</dt>
+				<dt>
+					<a href="#cont5-2">
+						<figure class=""><img src="./images2/contact_4.png" alt=""></figure>
+					</a>
+				</dt>
+
+
+				<dt>
+					<a href="#cont6-2">
+						<figure class=""><img src="./images2/contact_5.png" alt=""></figure>
+					</a>
+				</dt>
+
+
+				<!--<dt>
+					<a href="#cont3"><figure class=""><img src="contact_6.png" alt=""></figure></a>
+				</dt>-->
+
+
+
+				<dt>
+					<a href="#cont9">
+						<figure class=""><img src="./images2/contact_7.png" alt=""></figure>
+					</a>
+				</dt>
+
+
+
+
+				<dt>
+					<a href="#step2">
+						<figure class=""><img src="./images2/contact_8.png" alt=""></figure>
+					</a>
+				</dt>
+
+
+				<dt>
+					<a href="#cont10">
+						<figure class=""><img src="./images2/contact_9.png" alt=""></figure>
+					</a>
+				</dt>
+
+
+			</dl>
+		</div>
+
+	</section>
     <footer class="l-footer">
 		<div class="l-footer__inner">
 		  <div class="l-footer__logo"><img src="./assets/images/logo.svg" alt="logo-sp.svg" width=""/>
