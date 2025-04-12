@@ -3829,7 +3829,7 @@ body {
   }
   @media (max-width: 959px) {
 	.p-top__faq {
-	  padding: 80 20px;
+	  padding: 80px 20px;
 	}
   }
   .p-top__faq-content {
@@ -4126,6 +4126,7 @@ body {
 
 .p-top__reason-text p {
   margin-bottom: 0;
+  text-align: left;
 }
 
 /* 説明文 */
