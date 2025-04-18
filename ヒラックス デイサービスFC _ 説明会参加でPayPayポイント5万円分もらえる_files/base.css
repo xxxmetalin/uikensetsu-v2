@@ -4035,6 +4035,9 @@ body {
 	max-width: 300px;
 	overflow: hidden;
 	margin-bottom: 20px; /* 縦並び時に余白追加 */
+	border-radius: 10px; /* 角丸 */
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* ドロップシャドウ */
+
   }
 
 
@@ -4119,6 +4122,40 @@ body {
 }
 
 
+/* モバイル表示で要素を入れ替える */
+@media screen and (max-width: 599px) {
+	/* strengthセクションのカードスタイル */
+	#strength .p-top__reason-card {
+	  display: flex !important;
+	  flex-direction: column !important; /* 縦並びに */
+	}
+	
+	/* 見出し部分を一番上に */
+	#strength .p-top__reason-text {
+	  order: 1 !important; 
+	  width: 100%;
+	  margin-bottom: 15px;
+	}
+	
+	/* 画像を見出しの下に */
+	#strength .p-top__reason-img {
+	  order: 2 !important;
+	  width: 100%;
+	  margin-bottom: 15px;
+	  text-align: center;
+	}
+		
+	/* 画像のスタイル */
+	#strength .p-top__reason-img img {
+	  max-width: 100%;
+	  height: auto;
+	  border-radius: 10px; /* 角丸 */
+	  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* ドロップシャドウ */
+	}
+  }
+  
+
+
 /* 見出しと説明文 */
 .p-top__reason-text h3 {
   margin-bottom: 10px;
@@ -4128,6 +4165,11 @@ body {
   margin-bottom: 0;
   text-align: left;
 }
+
+.p-top__reason-desctext {
+	margin-bottom: 0;
+	text-align: left;
+  }
 
 /* 説明文 */
 .p-top__reason-desc {
@@ -4228,6 +4270,15 @@ body {
   
 
 
+.kyukakudai {
+padding: 20px;
 
+@media (max-width: 599px) {
+	.for-sp {
+width: 100%;	
 
+}	
+}
+max-width: 700px;
+}
 
