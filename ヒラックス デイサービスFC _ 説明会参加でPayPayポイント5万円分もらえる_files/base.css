@@ -4741,6 +4741,458 @@ body {
 
 
 
+
+/* p-complete-v2 */
+
+.p-complete-v2 {
+  width: 100vw;
+  min-height: 100vh;
+  background: url('../assets/images3/1000_F_596511008_mXOVzXYx6XAPSbu9rmubXo93iAeL5A1t\ 1.png') center center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.p-complete-v2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.p-complete-inner-v2 {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  width: 100%;
+  padding: 40px 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.p-complete-header-v2 {
+  margin-bottom: 60px;
+}
+
+/* 斜め7°のメインタイトル */
+.p-complete-main-title-v2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.4;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  letter-spacing: 0.02em;
+  transform: rotate(-7deg); /* 斜め7°に傾ける */
+  display: inline-block;
+}
+
+/* まっすぐの白背景黒文字ボックス */
+.p-complete-box-v2 {
+  background: #fff; /* 完全な白背景 */
+  border-radius: 12px;
+  padding: 32px 24px;
+  margin: 0 auto 60px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transform: rotate(0deg); /* まっすぐ（傾きなし） */
+}
+
+.p-complete-box-text-v2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #000; /* 完全な黒文字 */
+  line-height: 1.6;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+/* 普通のテキスト */
+.p-complete-footer-v2 {
+  margin-top: 40px;
+  transform: rotate(0deg); /* まっすぐ（普通） */
+}
+
+.p-complete-footer-text-v2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.8;
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.01em;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .p-complete-inner-v2 {
+    padding: 30px 15px;
+  }
+  
+  .p-complete-main-title-v2 {
+    font-size: 1.6rem;
+  }
+  
+  .p-complete-box-v2 {
+    padding:
+  }
+}
+
+/* Fin p-complete-v2 */
+
+
+
+/* p-points-section-v2 */
+
+.p-header-points-v2 {
+  width: 100vw;
+  background: linear-gradient(
+    180deg,
+    #CACACA 0%,
+    #F4F4F4 32%,
+    #CACACA 63%,
+    #F4F4F4 100%
+  );
+  padding: 40px 0;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.p-header-points-inner-v2 {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* 左上の黄色ラベル */
+.p-header-label-v2 {
+  background: #ffd700;
+  color: #222;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 20px;
+  letter-spacing: 0.02em;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+/* 下の黒い大文字 */
+.p-header-title-v2 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #222;
+  margin: 0;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  text-align: left;
+}
+
+/* レスポンシブ対応（600px以下） */
+@media (max-width: 600px) {
+  .p-header-points-v2 {
+    padding: 20px 0;
+  }
+  
+  .p-header-points-inner-v2 {
+    padding: 0 15px;
+  }
+  
+  .p-header-label-v2 {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin-bottom: 16px;
+  }
+  
+  .p-header-title-v2 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Point 01セクション */
+.p-point01-section-v2 {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  padding: 40px 32px;
+  margin-top: 60px;
+  text-align: center;
+  position: relative;
+}
+
+/* Point 01ラベル（黒枠） */
+.p-point01-label-v2 {
+  display: inline-block;
+  background: #fff;
+  color: #222;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 8px 20px;
+  border: 2px solid #222;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  letter-spacing: 0.05em;
+}
+
+/* イメージ画像 */
+.p-point01-image-v2 {
+  margin-bottom: 30px;
+}
+
+.p-point01-img-v2 {
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+/* メインタイトル（大文字） */
+.p-point01-title-v2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #222;
+  margin: 0 0 30px 0;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+}
+
+/* 説明文（ちょっと大きい文字） */
+.p-point01-desc-v2 {
+  font-size: 1.3rem;
+  color: #222;
+  line-height: 1.8;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+/* 黄色マーカー */
+.p-point01-highlight-v2 {
+  background: linear-gradient(transparent 60%, #fff9c4 60%);
+  font-weight: 700;
+  padding: 0 4px;
+  color: #222;
+}
+
+/* レスポンシブ対応（600px以下） */
+@media (max-width: 600px) {
+  .p-point01-section-v2 {
+    padding: 30px 20px;
+    margin-top: 40px;
+  }
+  
+  .p-point01-label-v2 {
+    font-size: 0.9rem;
+    padding: 6px 16px;
+    margin-bottom: 20px;
+  }
+  
+  .p-point01-img-v2 {
+    width: 250px;
+  }
+  
+  .p-point01-title-v2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+  
+  .p-point01-desc-v2 {
+    font-size: 1.1rem;
+  }
+}
+
+
+/* Fin p-points-section-v2 */
+
+
+
+
+/* p-start-section-v2 */
+
+.p-start-section-v2 {
+  width: 100vw;
+  min-height: 100vh;
+  background: url('../assets/images3/Group\ 624982.png') center center/cover no-repeat;
+  position: relative;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 40px 0;
+}
+
+/* 600px以上でグラデーション背景を追加 */
+@media (min-width: 600px) {
+  .p-start-section-v2 {
+    background: 
+      linear-gradient(90deg, #204C6F 0%, #102535 100%),
+      url('../assets/images3/Group\ 624982.png') center center/cover no-repeat;
+    background-blend-mode: overlay;
+  }
+}
+
+.p-start-inner-v2 {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* ヘッダー部分（左寄せ） */
+.p-start-header-v2 {
+  text-align: left;
+  margin-bottom: 60px;
+  padding-top: 20px;
+}
+
+.p-start-title-v2 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 1.3;
+  margin: 0;
+  letter-spacing: 0.03em;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* 白文字 */
+.p-start-white-v2 {
+  color: #fff;
+}
+
+/* 黄色文字 */
+.p-start-yellow-v2 {
+  color: #ffd700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Pointカード */
+.p-point-card-div-v2 {
+  background: #fff;
+}
+
+
+.p-point-card-v2 {
+  margin-bottom: 32px;
+  position: relative;
+  overflow: visible;
+}
+
+/* Point バッジ（青背景・白文字） */
+.p-point-badge-v2 {
+  background: #2561b0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 12px 32px;
+  border-radius: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.p-point-content-v2 {
+  padding: 40px 32px 24px 32px;
+  margin-top: 8px;
+}
+
+/* 求人募集（青文字） */
+.p-point-subtitle-v2 {
+  color: #2561b0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+/* 説明文（黒文字） */
+.p-point-desc-v2 {
+  color: #222;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 0;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+/* 黄色い下三角形 */
+.p-point-arrow-v2 {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-top: 20px solid #ffd700;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  z-index: 3;
+}
+
+/* 最後のカードは三角形なし */
+.p-point-card-v2:last-child .p-point-arrow-v2 {
+  display: none;
+}
+
+/* レスポンシブ対応（600px以下） */
+@media (max-width: 600px) {
+  .p-start-section-v2 {
+    padding: 20px 0;
+  }
+  
+  .p-start-inner-v2 {
+    padding: 0 15px;
+  }
+  
+  .p-start-title-v2 {
+    font-size: 2.2rem;
+  }
+  
+  .p-point-card-v2 {
+    margin-bottom: 28px;
+  }
+  
+  .p-point-content-v2 {
+    padding: 32px 20px 20px 20px;
+  }
+  
+  .p-point-badge-v2 {
+    font-size: 1rem;
+    padding: 10px 24px;
+    left: 20px;
+  }
+  
+  .p-point-subtitle-v2 {
+    font-size: 1.2rem;
+  }
+  
+  .p-point-desc-v2 {
+    font-size: 1rem;
+  }
+  
+  .p-point-arrow-v2 {
+    bottom: -16px;
+    border-top-width: 16px;
+    border-right-width: 16px;
+    border-left-width: 16px;
+  }
+}
+
+
+
+/* Fin p-start-section-v2 */
+
+
+
+
+
 /* セクション全体 */
 .reason-section {
   background-color: #fdf4e9;
