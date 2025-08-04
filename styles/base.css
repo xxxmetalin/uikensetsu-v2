@@ -2729,7 +2729,7 @@ body {
 }
 
 .l-footer__container {
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -3236,7 +3236,7 @@ body {
 }
 
 .p-top__lead-frame-v2 {
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   background-color: #f3f3f6;
   border-radius: 2px; /* corner radius 2に変更 */
@@ -3487,10 +3487,19 @@ body {
   text-align: center;
 }
 
+.p-top__cta-inner {
+  max-width: 600px;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;  /* これを追加 */
+}
+
+.p-top__cta-b-v4 {
+  height: auto;
+}
 /* 画像コンテナ */
 
 .p-top__cta-b-v4-img img {
-  max-width: 100%;
   height: auto;
 }
 
@@ -3511,6 +3520,7 @@ body {
   margin: 0;
   padding: 0 10px;
   line-height: 1.5;
+  font-size: 1.3rem;
 }
 
 /* レスポンシブ対応 */
@@ -3537,7 +3547,7 @@ body {
 }
 
 .p-message__inner {
-  max-width: 720px;
+  max-width: 600px;
   margin: 0 auto;
   background: #fff;
   padding: 40px 30px;
@@ -3600,7 +3610,7 @@ body {
 }
 
 .p-faq-section__inner {
-  max-width: 720px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -3700,7 +3710,6 @@ body {
 
 .p-top__flow-v2 {
   background: #fff;
-  padding: 50px 0;
 }
 .p-top__flow-inner-v2 {
   display: flex;
@@ -4072,6 +4081,8 @@ body {
   position: relative;
   z-index: 2;
   margin: 30px 60px 15px 60px;
+  max-width: 600px;
+  margin: 0 auto;  /* これを追加 */
 }
 
 .p-scene-header-img-v2 {
@@ -5052,7 +5063,7 @@ body {
   font-family: "Noto Sans JP", sans-serif;
   padding: 60px 30px;
   line-height: 1.8;
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
   box-sizing: border-box;
 }
