@@ -3478,6 +3478,36 @@ body {
 /* Fin p-top__cta-v2 */
 
 
+/* cont1 */
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 700px; /* 必要に応じて調整 */
+  margin: 0 auto;
+}
+
+.video-background {
+  width: 100%;
+  display: block;
+}
+
+.youtube-frame {
+  position: absolute;
+  top: 124px;    /* ← 位置微調整（上下） */
+  left: 60px;    /* ← 位置微調整（左右） */
+  width: 578px;  /* ← 動画の幅 */
+  height: 326px; /* ← 動画の高さ（16:9比率） */
+  border: none;
+}
+
+
+/* Fin cont1 */
+
+
+
+
+
 /* p-top__cta-v4 */
 
 /* p-top__cta-b-v4セクション */
@@ -3538,7 +3568,7 @@ body {
 
 
 .p-message {
-  background-image: url("../assets/images3/message_bg.png");
+  background-image: url("../assets/images3/message_bg-2.jpeg");
   background-size: cover;
   background-position: center;
   padding: 60px 20px;
@@ -4081,9 +4111,16 @@ body {
   position: relative;
   z-index: 2;
   margin: 30px 60px 15px 60px;
-  max-width: 600px;
+  max-width: 450px;
   margin: 0 auto;  /* これを追加 */
 }
+@media (max-width: 400px) {
+.p-scene-header-v2 {
+  max-width: 300px;
+  }
+}
+
+
 
 .p-scene-header-img-v2 {
   max-width: 100%;
@@ -4091,7 +4128,7 @@ body {
 }
 
 .p-scene-cards-v2 {
-  max-width: 400px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 0 12px;
   position: relative;
@@ -4103,11 +4140,12 @@ body {
 
 
 
+
 .p-scene-card-v2 {
   background: #fff;
   border-radius: 16px;
   max-width: 600px;
-  margin: 40px auto;
+  margin: 40px 0;
   padding: 0px 20px 16px 20px;
   box-shadow: 0 4px 32px rgba(0,0,0,0.13);
   position: relative;
@@ -4115,6 +4153,13 @@ body {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 400px) {
+.p-scene-card-v2 {
+  max-width: 600px;
+  margin: 40px auto;
+  }
+}
+
 
 .p-scene-badge-v2 {
   position: absolute;
