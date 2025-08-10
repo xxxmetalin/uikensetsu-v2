@@ -678,6 +678,34 @@
 		</header>
 
 
+<!-- ビデオフレーム コピペ -->
+
+		<section id="cont1" class="cont">
+
+
+				<br><br>
+				<br>
+				<br>
+				<br>
+				<br>
+
+
+
+				<div id="movie">
+					<iframe id="player" loading="lazy" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="月200万円の利益を目指しながら、この社会に必要不可欠な貢献を！国が認める社会貢献事業「ヒラックス」" width="1000" height="562" src="./ヒラックス デイサービスFC _ 説明会参加でPayPayポイント5万円分もらえる_files/VmoPEDGJQCE.html" data-gtm-yt-inspected-192725531_9="true"></iframe>
+
+
+
+
+
+				</div>
+
+				<br><br>
+
+			</section>
+
+<!-- Fin ビデオフレーム コピペ -->
+
 
 <section id="cont1" class="cont">
   <div class="video-wrapper">
@@ -713,11 +741,22 @@
   </div>
 </section>
 
+<div class="page-top is-hidden">
+
+<div class="furufuru">
+<a href="https://lin.ee/FWNhEY4">
+	<img src="./assets/images3/btn_03.png" alt="オンライン説明会に参加する">
+</a>
+</div>
+
+<!-- 
+			<div style="margin-top: 2px;"><label class="popup-open2" for="popup">プレゼント適用条件詳細</label></div>-->
+	
+</div>
 
 
 
-
-<section class="p-top__cta-b-v4">
+<section class="p-top__cta-b-v4" id="cta">
 	<div class="p-top__cta-inner">
 <div class="p-top__cta-b-v4-img">
 	<img src="./assets/images3/Group 624985.png">
@@ -732,11 +771,18 @@
 </section>
 
 
-<section class="p-top__flow-v2">
+<section id="step" class="p-top__flow-v2">
   <div class="p-top__flow-inner-v2">
-    <img src="./assets/images3/step.png" alt="ご利用の流れ" class="p-top__flow-img-v2">
+    <figure class="flow-image-box">
+      <img src="./assets/images3/step.png" alt="ご利用の流れ" class="p-top__flow-img-v2">
+      <!-- ↓ 黄色「説明会に参加する」を覆うクリック領域 -->
+      <a class="flow-hotspot"
+         href="https://example.com/entry" target="_blank"
+         aria-label="説明会に参加する"></a>
+    </figure>
   </div>
 </section>
+
 
 			  
 
@@ -771,9 +817,9 @@
     </div>
     <div class="p-scene-caption-v2">教えていただきましてありがとうございます</div>
   </div>
-  <a href="#scene01" class="p-scene-btn-v2">
+					<a href="#movie" target="_self" class="alpha" data-start="87"><li class="play_btn">
     <img src="./assets/images3/btn-2.png" alt="このシーンから視聴する">
-  </a>
+					</li></a>
 </div>
 
 
@@ -1099,7 +1145,7 @@
 
 
 
-<footer class="l-footer">
+<footer class="l-footer" id="contact">
   <div class="l-footer__container">
     <h2 class="l-footer__title">宇井建設</h2>
     
@@ -1159,6 +1205,34 @@
 
 
 
+	<!-- 追従ボタン -->
+<script>
+	jQuery(function () {
+		// ページ全体が読み込まれた後に実行
+		$(window).on('load', function () {
+			var stepSection = $('#cta').offset().top; // stepセクションの位置を取得
+			var contactSection = $('#contact').offset().top; // contactセクションの位置を取得
+			var windowHeight = $(window).height(); // ウィンドウの高さを取得
+
+			// ページが読み込まれた瞬間のスクロール位置に基づいて状態をチェック
+			updatePageTopVisibility();
+
+			// スクロールイベントで追従ボタンの表示/非表示を更新
+			window.onscroll = function () {
+				updatePageTopVisibility();
+			};
+
+
+
+);
+	});
+</script>
+
+
+	<!-- Fin 追従ボタン -->
+
+
+
 	<!-- クリックスクロールJS -->
 
 	<script src="./ヒラックス デイサービスFC _ 説明会参加でPayPayポイント5万円分もらえる_files/jquery-3.4.1.min.js.ダウンロード" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -1177,10 +1251,11 @@
 <script src="./ヒラックス デイサービスFC _ 説明会参加でPayPayポイント5万円分もらえる_files/8-2-1.js.ダウンロード"></script>
 
 
-	<!-- クリックスクロールJS -->
+<!-- クリックスクロールJS -->
 
 
-	<!--youtube指定秒数 -->
+
+	<!-- youtube指定秒数 -->
 	<script src="./ヒラックス デイサービスFC _ 説明会参加でPayPayポイント5万円分もらえる_files/iframe_api"></script>
 	<script>
 		var player;

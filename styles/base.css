@@ -2334,7 +2334,6 @@ div .h3 {
 
 
 #contact {
-	background-color: #0c3073;
 	padding-bottom: 150px;
 }
 
@@ -3164,6 +3163,86 @@ body {
   }
 }
 
+
+/* page-top 追従ボタン */
+.page-top {
+	z-index: 10000;
+	position: fixed;
+	max-width: 400px;
+	right: 10px;
+
+	padding-top: 2%;
+	bottom: 5px;
+
+	transition: 0.5s;
+	visibility: hidden;
+	/* 初期状態は非表示 */
+	opacity: 0;
+
+}
+
+/* フッターまたは指定箇所に達したら消す */
+.is-hidden {
+	visibility: hidden;
+	opacity: 0;
+}
+
+/* 表示される状態 */
+.is-visible {
+	visibility: visible;
+	opacity: 1;
+}
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+	.page-top {
+		z-index: 10000;
+		position: fixed;
+		padding-top: 2%;
+		padding-bottom: 2px;
+		padding-left: 18px;
+		padding-right: 18px;
+		bottom: 0px;
+		right: 0px;
+		max-width: 100%;
+		transition: 0.5s;
+		visibility: hidden;
+		/* 初期状態は非表示 */
+		opacity: 0;
+		/* 初期状態は透明 */
+		background: rgba(255, 255, 255, 0.53);
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		border: 1px solid rgba(255, 255, 255, 0.53);
+		backdrop-filter: blur(11.5px);
+		-webkit-backdrop-filter: blur(11.5px);
+	}
+
+	/* フッターまたは指定箇所に達したら消す */
+	.is-hidden {
+		visibility: hidden;
+		opacity: 0;
+	}
+
+	/* 表示される状態 */
+	.is-visible {
+		visibility: visible;
+		opacity: 1;
+	}
+
+
+
+}
+
+
+/* Fin  page-top 追従ボタン */
+
+
+
+
 .p-top__lead {
 	position: relative;
 	padding-block: 40px 24px;
@@ -3792,6 +3871,43 @@ body {
 
 
 
+/* 画像ボックス */
+.flow-image-box{
+  position: relative;
+  width: min(600px, 100%); /* 元画像ベース。必要なら変更 */
+  margin: 0 auto;
+}
+
+/* 画像（クラス名 v2 に合わせて修正） */
+.p-top__flow-img-v2{
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0 2px 16px rgba(0,0,0,.08);
+  background: #fff;
+}
+
+/* クリック可能な “空の” リンク領域（％指定でレスポンシブ対応） */
+.flow-hotspot{
+  position: absolute;
+  left: 4.0%;     /* ← ボタンの左端位置 */
+  top: 32.0%;     /* ← ボタンの上端位置 */
+  width: 56%;     /* ← ボタンの幅 */
+  height: 6.8%;   /* ← ボタンの高さ */
+  z-index: 2;
+  display: block;
+  /* 開発時だけ可視化： */
+  /* outline: 2px dashed rgba(255,0,0,.35); */
+}
+
+/* キーボード操作でも分かるように */
+.flow-hotspot:focus-visible{
+  outline: 3px solid #ffd54f;
+  outline-offset: 2px;
+}
+
+
+
 /*Fin p-top__flow-v2  test */
 
 
@@ -3834,9 +3950,6 @@ body {
     max-width: 100%;
     padding: 0 0;
   }
-  .p-top__flow-img-v2 {
-  border-radius: 0px; /* お好みで角丸 */
-}
 }
 
 
