@@ -771,7 +771,7 @@
 </section>
 
 
-<section id="step" class="p-top__flow-v2">
+<section id="cont4" class="p-top__flow-v2">
   <div class="p-top__flow-inner-v2">
     <figure class="flow-image-box">
       <img src="./assets/images3/step.png" alt="ご利用の流れ" class="p-top__flow-img-v2">
@@ -793,7 +793,7 @@
 
 
 
-<section class="p-scene-v2">
+<section class="p-scene-v2" id="cont10">
   <!-- ヘッダー画像 -->
   <div class="p-scene-header-v2">
     <img src="./assets/images3/Group 624877.png" alt="宇井建設FC参入支援ガイド 注目シーン" class="p-scene-header-img-v2">
@@ -1210,7 +1210,7 @@
 	jQuery(function () {
 		// ページ全体が読み込まれた後に実行
 		$(window).on('load', function () {
-			var stepSection = $('#cta').offset().top; // stepセクションの位置を取得
+			var stepSection = $('#cont4').offset().top; // stepセクションの位置を取得
 			var contactSection = $('#contact').offset().top; // contactセクションの位置を取得
 			var windowHeight = $(window).height(); // ウィンドウの高さを取得
 
@@ -1222,12 +1222,39 @@
 				updatePageTopVisibility();
 			};
 
+			// ポップアップのチェック状態に応じて追従ボタンを非表示にする
+			$('#popup').on('change', function () {
+				if ($(this).is(':checked')) {
+					// ポップアップが開いているときは追従ボタンを非表示に
+					$('.page-top').addClass('is-hidden').removeClass('is-visible');
+				} else {
+					// ポップアップが閉じられたら、スクロール位置に基づいて再表示
+					updatePageTopVisibility();
+				}
+			});
 
+			function updatePageTopVisibility() {
+				var point = window.pageYOffset; // 現在のスクロール地点
 
-);
+				// ポップアップが開いていないときだけ追従ボタンを表示/非表示する
+				if (!$('#popup').is(':checked')) {
+					// ① #step セクションの上部がウィンドウの上部に接触するまでは非表示
+					if (point < stepSection) {
+						$('.page-top').removeClass('is-visible').addClass('is-hidden'); // stepより上なら非表示
+					}
+					// ② #step セクションの上部がウィンドウの上部に接触すると表示
+					else if (point >= stepSection && (point + windowHeight) < contactSection) {
+						$('.page-top').removeClass('is-hidden').addClass('is-visible'); // stepに達したら表示
+					}
+					// ③ #contact セクションの上部がウィンドウの下部に接触したら再度非表示
+					else if (point + windowHeight >= contactSection) {
+						$('.page-top').removeClass('is-visible').addClass('is-hidden'); // contactに達したら再度非表示
+					}
+				}
+			}
+		});
 	});
 </script>
-
 
 	<!-- Fin 追従ボタン -->
 
