@@ -213,449 +213,30 @@ footer>.inner {
 }
 
 
-/* .cont */
-.cont {
-	padding: 90px 0 0 0;
-}
-
-.cont .inner {
-	max-width: 1000px;
-	width: 94%;
-	margin: auto;
-}
-
-
-
-
-.cont .inner2 {
-	max-width: 1000px;
-	width: 100%;
-	margin: auto;
-}
-
-
-.cont h2 {
-	font-size: 40px;
-	color: #303030;
-}
-
-.cont .logo {
-	display: inline-block;
-	width: 10em;
-	margin: 0 0.5em;
-	padding: 0 0.5em;
-}
-
-.cont .logo.line {
-	position: relative;
-}
-
-.cont .logo.line:before {
-	content: '';
-	display: block;
-	width: 1em;
-	height: 1em;
-	border-top: 2px solid #fa8500;
-	border-left: 2px solid #fa8500;
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-
-.cont .logo.line:after {
-	content: '';
-	display: block;
-	width: 1em;
-	height: 1em;
-	border-bottom: 2px solid #fa8500;
-	border-right: 2px solid #fa8500;
-	position: absolute;
-	right: 0;
-	bottom: 0;
-}
-
-.cont .white {
-	color: #fff;
-}
-
-.cont .bg_white {
-	background-color: #fff;
-}
-
-
-.cont .blue2 {
-	background-color: #fafafa;
-	color: #2672cc;
-}
-
-
-.cont .blue {
-	color: #303030;
-}
-
-.cont .bg_blue {
-	background-color: #73c039;
-}
-
-.cont .red {
-	color: #fa8500;
-}
-
-.cont .bg_red {
-	background-color: #dc0062
-}
-
-.cont .yellow {
-	color: #2672cc;
-}
-
-.cont .bg_yellow {
-	background-color: #ffe500;
-	display: inline-block;
-	margin: 0.1em;
-}
-
-
-
-.fba {
-	background-color: #00357f;
-	padding: 90px 0 0 0;
-}
-
-
-
-@media screen and (max-width:1024px) {
-
-
-
-
-	.cont {
-		padding: 0 0;
-	}
-
-
-
-	.fba {
-		background-color: #00357f;
-		padding: 9% 0;
-	}
-
-
-
-
-}
-
-@media screen and (max-width:768px) {
-	.cont h2 {
-		font-size: 5vw;
-	}
-}
-
 
 /* #cont1 */
-#cont1 {
-	padding-top: 0;
-	width: 100%;
-	background: url("cont1_bg_pc.png") no-repeat center center;
-	background-size: cover;
-	/* 背景画像をコンテナ全体に広げる */
-	background-position: top;
-	background-color: #fff7a2;
+#movie.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* 背景画像の横幅に合わせる */
+  margin: 0 auto;
+}
 
-	/* 背景画像の位置を調整する（オプション） */
+#movie .video-background {
+  width: 100%;
+  display: block;
+}
+
+#movie .youtube-frame {
+  position: absolute;
+  top: 110px;    /* 動画の縦位置を微調整 */
+  left: 15px;    /* 動画の横位置を微調整 */
+  width: 765px;  /* 動画の幅（背景に合わせる） */
+  height: 430px; /* 動画の高さ（16:9比率に合わせる） */
+  border: none;
 }
 
 
-#cont1 h2 {
-	padding: 1.2em 0;
-	line-height: 1.2;
-	position: relative;
-}
-
-#cont1 h2:after {
-	content: '';
-	display: block;
-	width: 1em;
-	height: 1em;
-	margin: auto;
-	border-right: 5px solid;
-	border-bottom: 5px solid;
-	transform: rotate(45deg);
-}
-
-
-
-
-
-.l09 {
-	font-size: 0.7em;
-	line-height: 0.7em;
-	font-family: 'Noto Serif JP', serif;
-}
-
-
-
-.highlight {
-	background: linear-gradient(transparent 60%, #ffff3b 0%);
-	line-height: 1.5em;
-	font-weight: bold;
-}
-
-
-.highlight2 {
-	color: #fe8029;
-	background: linear-gradient(transparent 60%, #ffff3b 0%);
-	line-height: 1.5em;
-	font-weight: bold;
-}
-
-
-.highlight21 {
-	background: linear-gradient(transparent 80%, #dc0062 0%);
-	line-height: 1.8em;
-	font-weight: bold;
-}
-
-
-.highlight22 {
-
-	line-height: 1.8em;
-	font-weight: bold;
-}
-
-
-.noto {
-	font-family: 'Noto Serif JP', serif;
-}
-
-.noto_b {
-	font-size: 1.5em;
-	line-height: 1.5em;
-	font-family: 'Noto Serif JP', serif;
-}
-
-
-.l06 {
-	font-size: 0.6em;
-}
-
-.l07 {
-	font-size: 0.7em;
-}
-
-
-.l08 {
-	font-size: 0.8em;
-}
-
-.l12 {
-	font-size: 1.2em;
-}
-
-
-
-.l14 {
-	font-size: 1.4em;
-	height: auto;
-	margin-top: 0px;
-}
-
-.l16 {
-	font-size: 1.6em;
-}
-
-.l18 {
-	font-size: 1.8em;
-}
-
-
-.tw {
-	color: #ffffff;
-}
-
-
-.tw2 {
-	color: #32373c;
-}
-
-
-
-
-
-
-.gouka {
-	text-align: center;
-	font-weight: bold;
-	color: transparent;
-	background: repeating-linear-gradient(0deg, #B67B03 0.1em, #DAAF08 0.2em, #FEE9A0 0.3em, #DAAF08 0.4em, #B67B03 0.5em);
-	-webkit-background-clip: text;
-	text-shadow: 0 0 0.15em rgb(223, 176, 38);
-}
-
-.bold_back {
-	color: #141212;
-	font-weight: bold;
-	background: #ff0;
-}
-
-.bold {
-	font-weight: bold;
-}
-
-.bold_u {
-	font-weight: bold;
-	background-color: #F7FF00;
-}
-
-.u {
-	font-weight: bold;
-	border-bottom: 2px solid;
-}
-
-.ul {
-	color: #ea7902;
-	font-weight: bold;
-	border-bottom: 4px solid;
-}
-
-
-.red_b {
-	color: #dc0062;
-	font-weight: bold;
-	font-size: 1.5em;
-	line-height: 1.5em;
-}
-
-.red_u {
-	color: #dc0062;
-	font-weight: bold;
-	background-color: #F7FF00;
-}
-
-.red_u_b {
-	color: #dc0062;
-	font-weight: bold;
-	background-color: #F7FF00;
-	font-size: 1.5em;
-	line-height: 1.5em;
-}
-
-.black_r {
-	color: #EB0000;
-	font-weight: bold;
-	background-color: #070707;
-}
-
-
-
-
-
-#cont1 h2 .large {
-	font-size: 50px;
-
-
-
-
-}
-
-
-#cont1 #movie {
-	margin: 16% auto 0;
-	position: relative;
-}
-
-#cont1 #movie #play_btn {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-align-items: center;
-	align-items: center;
-}
-
-#cont1 #movie #play_btn img {
-	width: 150px;
-}
-
-#cont1 p {
-	margin-top: 1em;
-	line-height: 1.2;
-	font-size: 38px;
-	font-weight: 900;
-}
-
-
-
-.cont1_2 {
-
-	background-color: #fff7a2;
-	padding: 0 0 60px 0;
-
-}
-
-
-@media screen and (max-width:1024px) {
-
-	#cont1 {
-		padding-top: 12%;
-		width: 100%;
-		background: url("cont1_bg.png") no-repeat center center;
-		background-size: contain;
-		/* 背景画像をコンテナ全体に広げる */
-		background-position: top;
-		/* 背景画像の位置を調整する（オプション） */
-		background-color: #fff7a2;
-
-	}
-
-
-	#cont1 #movie {
-		margin: 10% auto 0;
-		width: 94%;
-		padding-top: 53%;
-	}
-
-	#cont1 #movie #player {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100% !important;
-		height: 100% !important;
-	}
-
-	#cont1 p {
-		font-size: 4vw;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	#cont1 {
-		padding-top: 0;
-		width: 100%;
-		background: url("cont1_bg.png") no-repeat center center;
-		background-size: contain;
-		/* 背景画像をコンテナ全体に広げる */
-		background-position: top;
-		background-color: #fff7a2;
-
-		/* 背景画像の位置を調整する（オプション） */
-	}
-
-
-	#cont1 h2 .large {
-		font-size: 6.5vw;
-	}
-
-	#cont1 #movie #play_btn img {
-		margin: 10% auto 0;
-		width: 25%;
-	}
-}
 
 
 /* .cont2 */
@@ -3196,6 +2777,32 @@ body {
 }
 
 
+/* 600px以上：幅600pxで下中央固定 */
+@media (min-width: 600px) {
+  .page-top {
+    width: 600px;
+    max-width: 600px;     /* きっちり600pxに固定 */
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    bottom: 16px;         /* 余白。不要なら0に */
+    border-radius: 12px;  /* お好みで */
+  }
+}
+
+/* 中身の画像を枠にフィット */
+.page-top img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* iOS のセーフエリア対策（任意） */
+.page-top {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+
 /* Fin  page-top 追従ボタン */
 
 
@@ -3517,27 +3124,49 @@ body {
 
 /* cont1 */
 
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 700px; /* 必要に応じて調整 */
-  margin: 0 auto;
+/* ===== video section only ===== */
+#cont1 { position: relative; z-index: 0; }
+
+#cont1 #movie {
+  aspect-ratio: 916 / 768;
+  max-width: 600px;
+  margin: 15px auto;
+  padding: 0 20px;
+  background: url('../assets/images3/movie-nodrop.png') no-repeat center/100% 100%;
+  box-shadow: 0 10px 28px rgba(0,0,0,.25);
 }
 
-.video-background {
-  width: 100%;
-  display: block;
-}
 
-.youtube-frame {
+/* 背景の上に重ねるオーバーレイ層：ここで“背景側の余白”を付ける */
+#cont1 #movie .movie-frame-inner{
   position: absolute;
-  top: 124px;    /* ← 位置微調整（上下） */
-  left: 60px;    /* ← 位置微調整（左右） */
-  width: 578px;  /* ← 動画の幅 */
-  height: 326px; /* ← 動画の高さ（16:9比率） */
-  border: none;
+  inset: 0;                    /* 背景いっぱいを覆う */
+  padding: 20px 15px;          /* ← 指定の余白（上下20 / 左右15） */
+  display: grid;
+  place-items: center;         /* 中央寄せ */
+  box-sizing: border-box;
 }
 
+/* 動画は小さめ＆中央。パディングは iframe にかけない */
+#cont1 #movie iframe{
+  display: block;
+  width: 100%;                  /* 好みで 80–92% くらいで調整 */
+  max-width: 520px;            /* 上限ガード */
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+  position: relative;
+  z-index: 1;
+
+  margin-top: 80px; /* ← ここで下に移動 */
+}
+
+/* モバイル微調整（任意） */
+@media (max-width: 599px){
+  #cont1 #movie{ max-width: 100%; }
+  #cont1 #movie .movie-frame-inner{ padding: 16px 12px; }
+  #cont1 #movie iframe{ width: 92%; max-width: none; }
+}
 
 /* Fin cont1 */
 
