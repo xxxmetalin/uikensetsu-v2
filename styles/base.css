@@ -3166,75 +3166,33 @@ body {
 
 /* page-top 追従ボタン */
 .page-top {
-	z-index: 10000;
-	position: fixed;
-	max-width: 400px;
-	right: 10px;
+    z-index: 10000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: none;
+    padding: 10px 0;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 
-	padding-top: 2%;
-	bottom: 5px;
-
-	transition: 0.5s;
-	visibility: hidden;
-	/* 初期状態は非表示 */
-	opacity: 0;
-
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .4s ease, visibility .4s ease;
 }
 
-/* フッターまたは指定箇所に達したら消す */
-.is-hidden {
-	visibility: hidden;
-	opacity: 0;
+/* 表示する状態 */
+.page-top.is-visible {
+  visibility: visible;
+  opacity: 1;
 }
 
-/* 表示される状態 */
-.is-visible {
-	visibility: visible;
-	opacity: 1;
-}
-
-
-
-
-
-
-@media screen and (max-width:768px) {
-	.page-top {
-		z-index: 10000;
-		position: fixed;
-		padding-top: 2%;
-		padding-bottom: 2px;
-		padding-left: 18px;
-		padding-right: 18px;
-		bottom: 0px;
-		right: 0px;
-		max-width: 100%;
-		transition: 0.5s;
-		visibility: hidden;
-		/* 初期状態は非表示 */
-		opacity: 0;
-		/* 初期状態は透明 */
-		background: rgba(255, 255, 255, 0.53);
-		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-		border: 1px solid rgba(255, 255, 255, 0.53);
-		backdrop-filter: blur(11.5px);
-		-webkit-backdrop-filter: blur(11.5px);
-	}
-
-	/* フッターまたは指定箇所に達したら消す */
-	.is-hidden {
-		visibility: hidden;
-		opacity: 0;
-	}
-
-	/* 表示される状態 */
-	.is-visible {
-		visibility: visible;
-		opacity: 1;
-	}
-
-
-
+/* 非表示にする状態（明示） */
+.page-top.is-hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 
 
